@@ -12,7 +12,8 @@
     {
         $response = [];
         $resourceIdList = [];
-
+        $timeout = 3;
+        
         try {
             $mh = curl_multi_init();
             foreach ($urlList as $url) {
